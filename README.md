@@ -27,7 +27,7 @@ A secure, procedural PHP user registration and login system utilizing **MySQLi**
 ```text
 ├── database.php      # Database connection configuration using MySQLi object
 ├── login.php         # Secure user authentication processing & login interface
-├── register.php      # User registration logic, validation, & password hashing
+├── signup.php      # User registration logic, validation, & password hashing
 ├── welcome.php       # Protected user dashboard view (Session restricted)
 └── logout.php        # Session termination and token destruction handler
 
