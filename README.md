@@ -6,19 +6,19 @@ A secure, procedural PHP user registration and login system utilizing **MySQLi**
 
 ## 🚀 Features
 
-* **SQL Injection Protection:** Complete isolation of database logic and user inputs via MySQLi Prepared Statements (`prepare`, `bind_param`, `execute`).
-* **Secure Authentication:** Passwords are encrypted dynamically using PHP's native `password_hash()` with the `PASSWORD_DEFAULT` algorithm and verified via `password_verify()`.
-* **Session Hardening:** Mitigates Session Fixation and Hijacking attacks through automated ID rotation (`session_regenerate_id(true)`) and strict, server-side HTTP-only cookie configurations.
-* **Cross-Site Scripting (XSS) Mitigation:** Context-aware output escaping using `htmlspecialchars()` on all dynamic user data rendered in views.
-* **Asynchronous UX Routing:** Client-side registration delays managed dynamically via JavaScript runtime timeouts to ensure accurate front-end validation rendering.
+- **SQL Injection Protection:** Complete isolation of database logic and user inputs via MySQLi Prepared Statements (`prepare`, `bind_param`, `execute`).
+- **Secure Authentication:** Passwords are encrypted dynamically using PHP's native `password_hash()` with the `PASSWORD_DEFAULT` algorithm and verified via `password_verify()`.
+- **Session Hardening:** Mitigates Session Fixation and Hijacking attacks through automated ID rotation (`session_regenerate_id(true)`) and strict, server-side HTTP-only cookie configurations.
+- **Cross-Site Scripting (XSS) Mitigation:** Context-aware output escaping using `htmlspecialchars()` on all dynamic user data rendered in views.
+- **Asynchronous UX Routing:** Client-side registration delays managed dynamically via JavaScript runtime timeouts to ensure accurate front-end validation rendering.
 
 ---
 
 ## 🛠️ Tech Stack
 
-* **Backend:** PHP 8.x
-* **Database:** MySQL
-* **Frontend:** HTML5 / CSS3 / JavaScript (ES6)
+- **Backend:** PHP 8.x
+- **Database:** MySQL
+- **Frontend:** HTML5 / CSS3 / JavaScript (ES6)
 
 ---
 
@@ -39,8 +39,8 @@ A secure, procedural PHP user registration and login system utilizing **MySQLi**
 
 ### 1. Prerequisites
 
-* A local PHP/MySQL server environment running **XAMPP**, **WampServer**, or **MAMP**.
-* PHP 8.0 or higher enabled.
+- A local PHP/MySQL server environment running **XAMPP**, **WampServer**, or **MAMP**.
+- PHP 8.0 or higher enabled.
 
 ### 2. Database Configuration
 
@@ -64,14 +64,15 @@ CREATE TABLE IF NOT EXISTS userInfo (
 ### 3. Deploying Locally
 
 1. Clone this repository to your local server directory (e.g., `htdocs` for XAMPP):
+
 ```bash
 git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git
 
 ```
 
-
 2. Open your environment control panel and ensure **Apache** and **MySQL** services are actively running.
 3. Open your browser and navigate to:
+
 ```text
 http://localhost/YOUR_REPOSITORY_NAME/register.php
 
