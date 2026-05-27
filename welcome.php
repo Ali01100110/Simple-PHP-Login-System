@@ -1,5 +1,10 @@
 <?php
-session_start();
+session_start([
+    'cookie_lifetime' => 0,
+    'cookie_secure'   => false,
+    'cookie_httponly' => true,
+    'cookie_samesite' => 'Strict'
+]);
 if (!isset($_SESSION['username'])) {
     header("Location: login.php");
     exit();

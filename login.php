@@ -1,6 +1,11 @@
 <?php
 include "database.php";
-session_start();
+session_start([
+    'cookie_lifetime' => 0,          
+    'cookie_secure'   => false,      
+    'cookie_httponly' => true,       
+    'cookie_samesite' => 'Strict' 
+]);
 $message = "";
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $username = $_POST['user'];
