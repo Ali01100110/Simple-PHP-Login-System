@@ -74,7 +74,7 @@ git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git
 3. Open your browser and navigate to:
 
 ```text
-http://localhost/YOUR_REPOSITORY_NAME/register.php
+http://localhost/YOUR_REPOSITORY_NAME/signip.php
 
 ```
 
